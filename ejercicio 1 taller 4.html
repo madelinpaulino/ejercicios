@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Áreas</title>
+</head>
+<body>
+    <h2>Cálculo de Áreas</h2>
+    <p>Autor: Madelin Paulino</p>
+    <script>
+        // Función para calcular el área de un cuadrado
+        function cuadrado(l) {
+            return l * l;
+        }
+
+        // Función para calcular el área de un rectángulo
+        function rectangulo(l1, l2) {
+            return l1 * l2;
+        }
+
+        // Función para calcular el área de un triángulo
+        function triangulo(b, h) {
+            return (b * h) / 2;
+        }
+
+        // Valores de prueba
+        let ladoCuadrado = 5;
+        let baseRect = 8, alturaRect = 6;
+        let baseTriang = 20, alturaTriang = 10;
+
+        // Mostrar los resultados en la página
+        document.write("<p>Área del cuadrado de lado " + ladoCuadrado + " cm = " + cuadrado(ladoCuadrado) + " cm².</p>");
+        document.write("<p>Área del rectángulo de base " + baseRect + " cm y altura " + alturaRect + " cm = " + rectangulo(baseRect, alturaRect) + " cm².</p>");
+        document.write("<p>Área del triángulo de base " + baseTriang + " cm y altura " + alturaTriang + " cm = " + triangulo(baseTriang, alturaTriang) + " cm².</p>");
+    </script>
+</body>
+</html>  
